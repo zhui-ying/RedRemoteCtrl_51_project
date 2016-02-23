@@ -202,7 +202,7 @@ void main(void)
 				{
 					key_info.key_value = date;
 					ReadKeyMsg(&key_info);
-					//PrintDebugMsg();
+					PrintDebugMsg();
 					SendKeyMsg(&key_info);
 					beep();
 				} 
@@ -213,7 +213,7 @@ void main(void)
 				if(date <=10) //不超过10个值
 				{
 					key_info.key_value = date;
-					PrintDebugMsg();
+					//PrintDebugMsg();
 					WriteKeyMsg(&key_info);					
 					LED_read = 1;
 					LED_ok = 1;//灭灯
